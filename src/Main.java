@@ -9,7 +9,6 @@ public class Main {
         Triangulo f3 = new Triangulo(4,3);
         Rectangulo f4 = new Rectangulo(5,6);
         Forma[] formas = {f1,f2,f3,f4};
-        System.out.print('a');
         for (Forma f:formas){
             System.out.print(f.area() + "\n");
         }
