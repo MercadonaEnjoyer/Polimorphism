@@ -17,11 +17,24 @@ class Triangulo extends Forma{
         return base*altura;
     }
 }
-class Cuadrado extends Forma {
+class Rectangulo extends Forma {
+    int l1;
+    int l2;
+
+    public Rectangulo(int l1,int l2) {
+        this.l1 = l1;
+        this.l2 = l2;
+    }
+
+    public double area(){
+        return l1*l2;
+    }
+}
+class Cuadrado extends Rectangulo {
     int lado;
 
     public Cuadrado(int lado) {
-
+        super(lado,lado);
         this.lado = lado;
     }
 
