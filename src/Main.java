@@ -1,18 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
         System.out.print("Hello and welcome!\n");
+        List<Forma> f = new ArrayList<>();
         Cuadrado f1 = new Cuadrado(10);
+        f.add(f1);
         Circulo f2 = new Circulo(5);
+        f.add(f2);
         Triangulo f3 = new Triangulo(4,3);
+        f.add(f3);
         Rectangulo f4 = new Rectangulo(5,6);
-        Forma[] formas = {f1,f2,f3,f4};
-        for (Forma f:formas){
-            System.out.print(f.area() + "\n");
+        f.add(f4);
+        for (Forma forma:f){
+            System.out.print(forma.area() + "\n");
         }
-
-
     }
 }
